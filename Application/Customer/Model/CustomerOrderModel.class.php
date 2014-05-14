@@ -6,12 +6,12 @@
 // +----------------------------------------------------------------------
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
-namespace User\Model;
+namespace Customer\Model;
 use Think\Model;
 /**
  * 会员模型
  */
-class UcenterMemberModel extends Model{
+class CustomerOrderModel extends Model{
 	/**
 	 * 数据表前缀
 	 * @var string
