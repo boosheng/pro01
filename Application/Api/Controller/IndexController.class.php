@@ -22,8 +22,8 @@ class IndexController extends Controller {
     }
     
     public function order(){
-    	$cuid= intval($_REQUEST['cuid']);
-    	$id= intval($_REQUEST['id']);
+    	$cuid= intval(I('cuid',0));
+    	$id= intval(I('id',0));
     	if($cuid>0){
     		$par['uid']=$cuid;
     	}
@@ -35,7 +35,7 @@ class IndexController extends Controller {
     }
     
     public function customer(){
-    	$id= intval($_REQUEST['id']);
+    	$id= intval(I('id',0));
     	if($id>0){
     		$par['id']=$id;
     	}
