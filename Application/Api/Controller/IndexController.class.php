@@ -14,10 +14,10 @@ use OT\DataDictionary;
  * 前台首页控制器
  * 主要获取首页聚合数据
  */
-class IndexController extends HomeController {
+class IndexController extends Controller {
 
 	//系统首页
-    public function index(){
+    public function _initialize(){
     }
     
     public function order(){
