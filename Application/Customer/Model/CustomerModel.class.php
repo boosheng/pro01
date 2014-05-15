@@ -38,12 +38,4 @@ class CustomerModel extends Model{
 		array('status', 'getStatus', self::MODEL_BOTH, 'callback'),
 	);
 
-	public function add(){
-		
-	}
-	
-	public function edit(){
-	
-	}
-
 }
