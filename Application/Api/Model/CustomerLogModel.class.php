@@ -12,17 +12,6 @@ use Think\Model;
  * 会员模型
  */
 class UcenterMemberModel extends Model{
-	/**
-	 * 数据表前缀
-	 * @var string
-	 */
-	protected $tablePrefix = UC_TABLE_PREFIX;
-
-	/**
-	 * 数据库连接
-	 * @var string
-	 */
-	protected $connection = UC_DB_DSN;
 
 	/* 用户模型自动验证 */
 	protected $_validate = array(
