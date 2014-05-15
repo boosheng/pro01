@@ -18,16 +18,17 @@ class IndexController extends HomeController {
 
 	//系统首页
     public function index(){
-
-        $category = D('Category')->getTree();
-        $lists    = D('Document')->lists(null);
-
-        $this->assign('category',$category);//栏目
-        $this->assign('lists',$lists);//列表
-        $this->assign('page',D('Document')->page);//分页
-
-                 
-        $this->display();
+		D("Customer");
+    }
+    
+    public function order(){
+    	$res = D("CustomerOrder")->where()->find();
+    	echo json_encode($res,true);
+    }
+    
+    public function customer(){
+    	$res = D("Customer")->where()->select();
+    	echo json_encode($res,true);
     }
 
 }

@@ -6,12 +6,12 @@
 // +----------------------------------------------------------------------
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
-namespace User\Model;
+namespace Api\Model;
 use Think\Model;
 /**
  * 会员模型
  */
-class UcenterMemberModel extends Model{
+class CustomerLogModel extends Model{
 
 	/* 用户模型自动验证 */
 	protected $_validate = array(
