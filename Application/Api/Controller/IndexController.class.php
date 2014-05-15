@@ -9,6 +9,7 @@
 
 namespace Api\Controller;
 use OT\DataDictionary;
+use Think\Controller;
 
 /**
  * 前台首页控制器
