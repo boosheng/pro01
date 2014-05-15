@@ -21,12 +21,24 @@ class IndexController extends HomeController {
     }
     
     public function order(){
-    	$res = D("CustomerOrder")->where()->find();
+    	$cuid= intval($_REQUEST['cuid']);
+    	$id= intval($_REQUEST['id']);
+    	if($cuid>0){
+    		$par['uid']=$cuid;
+    	}
+    	if($id>0){
+    		$par['id']=$id;
+    	}
+    	$res = D("CustomerOrder")->where($par)->select();
     	echo json_encode($res,true);
     }
     
     public function customer(){
-    	$res = D("Customer")->where()->select();
+    	$id= intval($_REQUEST['id']);
+    	if($id>0){
+    		$par['id']=$id;
+    	}
+    	$res = D("Customer")->where($par)->select();
     	echo json_encode($res,true);
     }
 
