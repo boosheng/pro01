@@ -7,7 +7,7 @@
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
 
-namespace Home\Controller;
+namespace Api\Controller;
 use OT\DataDictionary;
 
 /**
@@ -18,7 +18,6 @@ class IndexController extends HomeController {
 
 	//系统首页
     public function index(){
-		D("Customer");
     }
     
     public function order(){
